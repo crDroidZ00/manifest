@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+<remote name="cm-zf2"
+fetch="https://github.com/CM-zenfone2"
+revision="cm-12.1" />
+
+<remote name="crdroidzf2"
+fetch="https://github.com/crDroidZ00"
+revision="cm-12.1" />
+
+<!-- REMOVE SOME PROJECTS -->
+<remove-project name="platform/hardware/intel/common/libmix" path="hardware/intel/common/libmix" />
+<remove-project name="platform/hardware/intel/common/libstagefrighthw" path="hardware/intel/common/libstagefrighthw" />
+<remove-project name="platform/hardware/intel/common/libva" path="hardware/intel/common/libva" />
+<remove-project name="platform/hardware/intel/common/omx-components" path="hardware/intel/common/omx-components" />
+<remove-project name="platform/hardware/intel/common/utils" path="hardware/intel/common/utils" />
+<remove-project name="platform/hardware/intel/common/wrs_omxil_core" path="hardware/intel/common/wrs_omxil_core" />
+<remove-project name="platform/hardware/intel/img/hwcomposer" path="hardware/intel/img/hwcomposer" />
+<remove-project name="platform/hardware/intel/img/libdrm" path="hardware/intel/img/libdrm" />
+<remove-project name="platform/hardware/intel/img/psb_video" path="hardware/intel/img/psb_video" />
+
+
+<remove-project name="crdroidandroid/android_frameworks_base" path="frameworks/base" />
+<remove-project name="crdroidandroid/android_packages_apps_Settings" path="packages/apps/Settings" />
+<remove-project name="crdroidandroid/android_vendor_crdroid" path="vendor/crdroid" />
+<remove-project name="crdroidandroid/android_build" path="build" />
+<remove-project name="CyanogenMod/android_frameworks_native" path="frameworks/native" />
+<remove-project name="CyanogenMod/android_hardware_ril" path="hardware/ril" />
+<remove-project name="crdroidandroid/android_system_core" path="system/core" />
+<remove-project name="CyanogenMod/android_bootable_recovery" path="bootable/recovery" />
+<remove-project name="CyanogenMod/android_external_tinyalsa" path="external/tinyalsa" />
+
+<!-- ADD CM-ZENFONE2 PROJECTS -->
+<project name="android_hardware_intel_common_libmix" path="hardware/intel/common/libmix" remote="cm-zf2" />
+<project name="android_hardware_intel_common_libstagefrighthw" path="hardware/intel/common/libstagefrighthw" remote="cm-zf2" />
+<project name="android_hardware_intel_common_libva" path="hardware/intel/common/libva" remote="cm-zf2" />
+<project name="android_hardware_intel_common_omx-components" path="hardware/intel/common/omx-components" remote="cm-zf2" />
+<project name="android_hardware_intel_common_utils" path="hardware/intel/common/utils" remote="cm-zf2" />
+<project name="android_hardware_intel_common_wrs_omxil_core" path="hardware/intel/common/wrs_omxil_core" remote="cm-zf2" />
+<project name="android_hardware_intel_img_hwcomposer" path="hardware/intel/img/hwcomposer" remote="cm-zf2" />
+<project name="android_hardware_intel_img_libdrm" path="hardware/intel/img/libdrm" remote="cm-zf2" />
+<project name="android_hardware_intel_img_psb_video" path="hardware/intel/img/psb_video" remote="cm-zf2" />
+
+
+<project name="android_frameworks_base" path="frameworks/base" remote="crdroidzf2" revision="5.1.1" />
+<project name="android_packages_apps_Settings" path="packages/apps/Settings" remote="crdroidzf2" revision="5.1.1" />
+<project name="android_build" path="build" remote="crdroidzf2" revision="5.1.1" />
+<project name="android_vendor_crdroid" path="vendor/crdroid" remote="crdroidzf2" revision="5.1.1" />
+<project name="android_frameworks_native" path="frameworks/native" remote="crdroidzf2" />
+<project name="android_hardware_ril" path="hardware/ril" remote="crdroidzf2" />
+<project name="android_system_core" path="system/core" remote="crdroidzf2" />
+<project name="android_bootable_recovery" path="bootable/recovery" remote="crdroidzf2" />
+<project name="android_external_tinyalsa" path="external/tinyalsa" remote="crdroidzf2" />
+
+<!-- CM-ZENFONE2 DEVICE PROJECTS -->
+<project name="android_device_asus_Z00A" path="device/asus/Z00A" remote="crdroidzf2" />
+<project name="android_device_asus_Z008" path="device/asus/Z008" remote="crdroidzf2" />
+<project name="android_device_asus_mofd-common" path="device/asus/mofd-common" remote="cm-zf2" />
+<project name="android_kernel_asus_moorefield" path="kernel/asus/moorefield" remote="cm-zf2" />
+<project name="proprietary_vendor_asus" path="vendor/asus" remote="cm-zf2" />
+</manifest>
